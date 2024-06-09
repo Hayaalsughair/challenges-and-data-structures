@@ -14,6 +14,7 @@
             //Most  Frequent Number  
             int[] arr = { 1, 1, 2, 2, 3, 3, 3, 1, 1, 5, 5, 6, 7, 8, 2, 1, 1 };
             int n = arr.Length;
+
             Console.WriteLine("Most frequent number:");
             Console.WriteLine(MostFrequent(arr, n));
 

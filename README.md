@@ -2,7 +2,7 @@
 ### Whiteboard Images
 
 ### Challenge 01 A: Array Reversal
--ReversArr Method: Reverses the elements of an integer array and prints the reversed array.
+- ReversArr Method: Reverses the elements of an integer array and prints the reversed array.
 [CC01.A whiteboard]( https://github.com/Hayaalsughair/challenges-and-data-structures/blob/whiteboard-challenges/c_basics/whiteboard-challenges/c1A.jpg?raw=true )
 
 

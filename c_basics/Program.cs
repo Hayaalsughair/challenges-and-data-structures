@@ -8,6 +8,7 @@
             int[] arr0 = { 1, 2, 3, 4, 5, 6, 7 };
             Console.WriteLine("Reversed array:");
             ReversArr(arr0);
+
             Console.WriteLine("\n-----------------------------------------");
 
             //Most  Frequent Number  

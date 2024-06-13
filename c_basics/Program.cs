@@ -1,4 +1,7 @@
-﻿namespace c_basics
+﻿using System.ComponentModel.Design;
+using System.Linq.Expressions;
+
+namespace c_basics
 {
     internal class Program
     {
@@ -23,6 +26,13 @@
             int[] arr2 = { 10, 15, 8, 6, 12 };
             Console.WriteLine("Max value in array:");
             Console.WriteLine(MaximumValue(arr2));
+
+            //Remove-Middle-Value
+            Console.WriteLine("-----------------------------------------");
+            int[] arr3 = { 1, 2, 3, 4, 5 };
+            int[] result = RemoveMiddleValue(arr3);
+            Console.WriteLine($"Removing the middle number :\n input: {string.Join(",", arr3)} output: {string.Join(",", result)}");
+
         }
 
         static int[] ReversArr(int[] arr0)
@@ -84,5 +94,24 @@
             return maxInt;
         }
 
+        public static int[] RemoveMiddleValue(int[] arr)
+        {
+            int middleIndex = arr.Length / 2;
+            int[] newArr = new int[arr.Length - 1]; 
+
+            for (int i = 0; i < middleIndex; i++)
+            {
+                newArr[i] = arr[i];
+            }
+
+            for (int i = middleIndex; i < newArr.Length; i++)
+            {
+                newArr[i] = arr[i + 1];
+            }
+
+            return newArr;
+            
+        }
     }
 }
+

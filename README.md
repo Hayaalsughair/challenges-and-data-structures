@@ -23,3 +23,10 @@
 - `RemoveMiddleValue` Method: This method removes the middle element from an integer array and returns the resulting array, preserving all other elements.
 [CC 03 whiteboard](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/ccImage/cc03.jpg)
 
+
+## Challenge 04 :
+###  Insert Value in Middle of Array 
+- ` MiddleValue` Method: This method to Add value in the middle of array and returns the resulting array.
+[CC 04 whiteboard](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/CC04/CC04.jpg)
+
+

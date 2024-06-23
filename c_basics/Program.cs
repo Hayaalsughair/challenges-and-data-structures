@@ -33,6 +33,13 @@ namespace c_basics
             int[] result = RemoveMiddleValue(arr3);
             Console.WriteLine($"Removing the middle number :\n input: {string.Join(",", arr3)} output: {string.Join(",", result)}");
 
+            //Insert-Middle-Value
+            Console.WriteLine("-----------------------------------------");
+            int[] arr4 = { 1, 2, 3, 4 };
+            int middleValue = 5;
+            int[] result1= MiddleValue(arr4, middleValue);
+            Console.WriteLine($"Insert Middle Value: \n Middle Value: {middleValue} Array: {string.Join(",", arr4)} \n Output: {string.Join(",", result1)}");
+
         }
 
         static int[] ReversArr(int[] arr0)
@@ -112,6 +119,26 @@ namespace c_basics
             return newArr;
             
         }
+        public static int[] MiddleValue(int[] arr, int value)
+        {
+            int middleIndex= arr.Length / 2;
+            int[] newArray = new int[arr.Length + 1];
+
+
+            for (int i = 0; i < middleIndex; i++)
+            {
+                newArray[i] = arr[i];
+            }
+
+            newArray[middleIndex] = value;
+
+            for (int i = middleIndex; i < arr.Length; i++)
+            {
+                newArray[i + 1] = arr[i];
+            }
+            return newArray;
+        }
     }
+
 }
 

@@ -40,6 +40,12 @@ namespace c_basics
             int[] result1= MiddleValue(arr4, middleValue);
             Console.WriteLine($"Insert Middle Value: \n Middle Value: {middleValue} Array: {string.Join(",", arr4)} \n Output: {string.Join(",", result1)}");
 
+
+            //Duplicates Number 
+            Console.WriteLine("-----------------------------------------");
+            int[] arr5 = { 5, 10, 16, 20, 10, 16 };
+            int[] result2=FindDuplicates(arr5);
+            Console.WriteLine($"Array: {string.Join(",",arr5)}\n Duplicates Number: {string.Join(",",result2)}");
         }
 
         static int[] ReversArr(int[] arr0)
@@ -63,7 +69,6 @@ namespace c_basics
             }
             return arr0;
         }
-
         public static int MostFrequent(int[] arr, int n)
         {
             int maxcount = 0;
@@ -100,7 +105,6 @@ namespace c_basics
             }
             return maxInt;
         }
-
         public static int[] RemoveMiddleValue(int[] arr)
         {
             int middleIndex = arr.Length / 2;
@@ -115,7 +119,7 @@ namespace c_basics
             {
                 newArr[i] = arr[i + 1];
             }
-
+               
             return newArr;
             
         }
@@ -138,6 +142,23 @@ namespace c_basics
             }
             return newArray;
         }
+        public static int[] FindDuplicates(int[] arr) {
+            List<int> duplicateNum = new List<int>();
+
+            for (int i = 0; i < arr.Length; i++) { 
+                for (int j = i+1; j < arr.Length; j++)
+                {
+                    if (arr[j] == arr[i])
+                    {
+                        duplicateNum.Add(arr[i]);
+                    }
+                } 
+            }
+
+            return duplicateNum.ToArray();
+        }
+
+
     }
 
 }

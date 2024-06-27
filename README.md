@@ -29,4 +29,8 @@
 - ` MiddleValue` Method: This method to Add value in the middle of array and returns the resulting array.
 [CC 04 whiteboard](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/CC04/CC04.jpg)
 
+## Challenge 05 :
+###  Duplicates Number 
+- ` FindDuplicates` Method: This method returns an array that contains all duplicates from the input array.
+[CC 05 OutPut Screen](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Challenges05/CC05.jpg)
 

@@ -152,6 +152,7 @@ namespace c_basics
                     {
                         duplicateNum.Add(arr[i]);
                     }
+
                 } 
             }
 

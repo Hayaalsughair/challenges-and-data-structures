@@ -32,5 +32,11 @@
 ## Challenge 05 :
 ###  Duplicates Number 
 - ` FindDuplicates` Method: This method returns an array that contains all duplicates from the input array.
-[CC 05 OutPut Screen](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Challenges05/cc05.jpg)
+[CC 05 Output capture](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Challenges05/cc05.jpg)
+
+## Challenge 06 :
+###  Common Elements 
+- ` CommonElements` Method: This method returns an array that contains all common number from the input arrays.
+[CC 05 Output capture](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Challenges/Common-Elements/cc06Output.jpg)
+[CC 05 whiteboard](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Challenges/Common-Elements/cc06.jpg)
 

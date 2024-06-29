@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.Design;
+﻿using c_basics.Challenges.Common_Elements;
+using System.ComponentModel.Design;
 using System.Linq.Expressions;
 
 namespace c_basics
@@ -7,45 +8,55 @@ namespace c_basics
     {
         static void Main(string[] args)
         {
-            //Reversed Array 
-            int[] arr0 = { 1, 2, 3, 4, 5, 6, 7 };
-            Console.WriteLine("Reversed array:");
-            ReversArr(arr0);
+            ////Reversed Array 
+            //int[] arr0 = { 1, 2, 3, 4, 5, 6, 7 };
+            //Console.WriteLine("Reversed array:");
+            //ReversArr(arr0);
 
-            Console.WriteLine("\n-----------------------------------------");
+            //Console.WriteLine("\n-----------------------------------------");
 
-            //Most  Frequent Number  
-            int[] arr = { 1, 1, 2, 2, 3, 3, 3, 1, 1, 5, 5, 6, 7, 8, 2, 1, 1 };
-            int n = arr.Length;
+            ////Most  Frequent Number  
+            //int[] arr = { 1, 1, 2, 2, 3, 3, 3, 1, 1, 5, 5, 6, 7, 8, 2, 1, 1 };
+            //int n = arr.Length;
 
-            Console.WriteLine("Most frequent number:");
-            Console.WriteLine(MostFrequent(arr, n));
+            //Console.WriteLine("Most frequent number:");
+            //Console.WriteLine(MostFrequent(arr, n));
 
-            //Max Value in Array 
+            ////Max Value in Array 
+            //Console.WriteLine("-----------------------------------------");
+            //int[] arr2 = { 10, 15, 8, 6, 12 };
+            //Console.WriteLine("Max value in array:");
+            //Console.WriteLine(MaximumValue(arr2));
+
+            ////Remove-Middle-Value
+            //Console.WriteLine("-----------------------------------------");
+            //int[] arr3 = { 1, 2, 3, 4, 5 };
+            //int[] result = RemoveMiddleValue(arr3);
+            //Console.WriteLine($"Removing the middle number :\n input: {string.Join(",", arr3)} output: {string.Join(",", result)}");
+
+            ////Insert-Middle-Value
+            //Console.WriteLine("-----------------------------------------");
+            //int[] arr4 = { 1, 2, 3, 4 };
+            //int middleValue = 5;
+            //int[] result1= MiddleValue(arr4, middleValue);
+            //Console.WriteLine($"Insert Middle Value: \n Middle Value: {middleValue} Array: {string.Join(",", arr4)} \n Output: {string.Join(",", result1)}");
+
+
+            ////Duplicates Number 
+            //Console.WriteLine("-----------------------------------------");
+            //int[] arr5 = { 5, 10, 16, 20, 10, 16 };
+            //int[] result2=FindDuplicates(arr5);
+            //Console.WriteLine($"Array: {string.Join(",",arr5)}\n Duplicates Number: {string.Join(",",result2)}");
+
+            //Common Elements
             Console.WriteLine("-----------------------------------------");
-            int[] arr2 = { 10, 15, 8, 6, 12 };
-            Console.WriteLine("Max value in array:");
-            Console.WriteLine(MaximumValue(arr2));
-
-            //Remove-Middle-Value
-            Console.WriteLine("-----------------------------------------");
-            int[] arr3 = { 1, 2, 3, 4, 5 };
-            int[] result = RemoveMiddleValue(arr3);
-            Console.WriteLine($"Removing the middle number :\n input: {string.Join(",", arr3)} output: {string.Join(",", result)}");
-
-            //Insert-Middle-Value
-            Console.WriteLine("-----------------------------------------");
-            int[] arr4 = { 1, 2, 3, 4 };
-            int middleValue = 5;
-            int[] result1= MiddleValue(arr4, middleValue);
-            Console.WriteLine($"Insert Middle Value: \n Middle Value: {middleValue} Array: {string.Join(",", arr4)} \n Output: {string.Join(",", result1)}");
+            int[] arr6 = { 1, 2, 3, 0 };
+            int[] arr7 = { 5, 7, 4, 9 };
+            int[] commonResult = solutionCommonElement.CommonElements(arr6, arr7);
+            Console.WriteLine($"Array 1 : {string.Join(",", arr6)}\nArray 2: {string.Join(",", arr7)}\nCommon Number: {string.Join(",", commonResult)}");
 
 
-            //Duplicates Number 
-            Console.WriteLine("-----------------------------------------");
-            int[] arr5 = { 5, 10, 16, 20, 10, 16 };
-            int[] result2=FindDuplicates(arr5);
-            Console.WriteLine($"Array: {string.Join(",",arr5)}\n Duplicates Number: {string.Join(",",result2)}");
+
         }
 
         static int[] ReversArr(int[] arr0)

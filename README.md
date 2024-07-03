@@ -41,3 +41,17 @@
 
 [CC 06 whiteboard](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Challenges/Common-Elements/cc06.jpg)
 
+## Challenge 07 :
+###  Reverse Words 
+- ` ReverseWords` Method: This method returns a string with the words in reverse order.
+[CC 07 whiteboard](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Reverse-Words/CC07.jpg)
+
+[CC 07 whiteboard](../../cc07)
+
+
+[CC 07 Output](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Reverse-Words/cc07Output.jpg)
+
+
+
+
+

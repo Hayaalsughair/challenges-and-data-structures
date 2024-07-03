@@ -1,4 +1,5 @@
 ﻿using c_basics.Challenges.Common_Elements;
+using c_basics.Reverse_Words;
 using System.ComponentModel.Design;
 using System.Linq.Expressions;
 
@@ -49,13 +50,22 @@ namespace c_basics
             //Console.WriteLine($"Array: {string.Join(",",arr5)}\n Duplicates Number: {string.Join(",",result2)}");
 
             //Common Elements
-            Console.WriteLine("-----------------------------------------");
-            int[] arr6 = { 1, 2, 3, 0 };
-            int[] arr7 = { 5, 7, 4, 9 };
-            int[] commonResult = solutionCommonElement.CommonElements(arr6, arr7);
-            Console.WriteLine($"Array 1 : {string.Join(",", arr6)}\nArray 2: {string.Join(",", arr7)}\nCommon Number: {string.Join(",", commonResult)}");
+            //Console.WriteLine("-----------------------------------------");
+            //int[] arr6 = { 1, 2, 3, 0 };
+            //int[] arr7 = { 5, 7, 4, 9 };
+            //int[] commonResult = solutionCommonElement.CommonElements(arr6, arr7);
+            //Console.WriteLine($"Array 1 : {string.Join(",", arr6)}\nArray 2: {string.Join(",", arr7)}\nCommon Number: {string.Join(",", commonResult)}");
 
+            //Reverse word 
+            //Console.WriteLine("-----------------------------------------");
+            string statment1 = "csharp is programming language";
+            string statment2 = "Reverse the words in this sentence";
+            string statment3 = "challenges and data structures";
+            string sol = ReverseWord.ReverseWords(statment1);
+            string sol2 = ReverseWord.ReverseWords(statment2);
+            string sol3 = ReverseWord.ReverseWords(statment3);
 
+            Console.WriteLine($"Input: {statment1}\tOutput: {sol}\nInput: {statment2}\tOutput: {sol2}\nInput: {statment3}\tOutput : {sol3}");
 
         }
 

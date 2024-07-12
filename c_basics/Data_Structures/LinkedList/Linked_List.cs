@@ -10,7 +10,6 @@ namespace c_basics.Data_Structures.LinkedList
     {
         public Node Head { get; set; }
         public Node Tail { get; set; }
-       // Node Tail;
         public Linked_List()
         {
             Head = null;
@@ -47,20 +46,24 @@ namespace c_basics.Data_Structures.LinkedList
             }
 
         }
-        public void PrintList()
+        public int PrintList()
         {
             Node Start = Head;
             if (Start == null)
             {
                 Console.WriteLine("Linked List is Empty");
+                return 0;
             }
             else
             {
+                int count = 0;
                 while (Start != null)
                 {
                     Console.WriteLine(Start.Data);
-                    Start = Start.Next; 
+                    Start = Start.Next;
+                    count++;
                 }
+                return count;
             }
         }
         public bool Include(int value)

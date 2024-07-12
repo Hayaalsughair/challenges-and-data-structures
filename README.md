@@ -34,23 +34,26 @@
 - ` FindDuplicates` Method: This method returns an array that contains all duplicates from the input array.
 [CC 05 Output capture](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Challenges05/cc05.jpg)
 
-## Challenge 06 :
+## Challenge 06 A :
 ###  Common Elements 
 - ` CommonElements` Method: This method returns an array that contains all common number from the input arrays.
 [CC 06 Output capture](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Challenges/Common-Elements/cc06Output.jpg)
 
 [CC 06 whiteboard](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Challenges/Common-Elements/cc06.jpg)
 
-## Challenge 07 :
+## Challenge 06 B :
 ###  Reverse Words 
 - ` ReverseWords` Method: This method returns a string with the words in reverse order.
 
-[CC 07 whiteboard](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Reverse-Words/cc07.jpg)
+[CC 06 B whiteboard](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Reverse-Words/cc07.jpg)
 
 
-[CC 07 Output](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Reverse-Words/cc07Output.png)
+[CC 06 B Output](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Reverse-Words/cc07Output.png)
 
-
+## Challenge 07 :
+###  Linked List  
+- `Linked_List` Class: Implements a singly linked list with methods to add, remove, print elements, and check for inclusion.
+[CC 07 whiteboard](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Data__Structures/LinkedList/LinkedList.jpg)
 
 
 

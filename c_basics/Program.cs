@@ -1,4 +1,5 @@
 ﻿using c_basics.Challenges.Common_Elements;
+using c_basics.Data_Structures.LinkedList;
 using c_basics.Reverse_Words;
 using System.ComponentModel.Design;
 using System.Linq.Expressions;
@@ -58,14 +59,30 @@ namespace c_basics
 
             //Reverse word 
             //Console.WriteLine("-----------------------------------------");
-            string statment1 = "csharp is programming language";
-            string statment2 = "Reverse the words in this sentence";
-            string statment3 = "challenges and data structures";
-            string sol = ReverseWord.ReverseWords(statment1);
-            string sol2 = ReverseWord.ReverseWords(statment2);
-            string sol3 = ReverseWord.ReverseWords(statment3);
+            //string statment1 = "csharp is programming language";
+            //string statment2 = "Reverse the words in this sentence";
+            //string statment3 = "challenges and data structures";
+            //string sol = ReverseWord.ReverseWords(statment1);
+            //string sol2 = ReverseWord.ReverseWords(statment2);
+            //string sol3 = ReverseWord.ReverseWords(statment3);
 
-            Console.WriteLine($"Input: {statment1}\tOutput: {sol}\nInput: {statment2}\tOutput: {sol2}\nInput: {statment3}\tOutput : {sol3}");
+            //Console.WriteLine($"Input: {statment1}\tOutput: {sol}\nInput: {statment2}\tOutput: {sol2}\nInput: {statment3}\tOutput : {sol3}");
+
+            //Linked List 
+            Linked_List myList = new Linked_List();
+            myList.AddEnd(10); 
+            myList.AddFirst(5);
+            myList.AddFirst(6);
+            myList.AddEnd(7);
+            myList.Include(5);
+            Console.WriteLine("Print List Before Remove elemnt:");
+            myList.PrintList();
+            myList.Remove(10);
+            Console.WriteLine();
+            Console.WriteLine("Print List After Remove elemnt: ");
+            myList.PrintList();
+
+
 
         }
 

@@ -53,7 +53,7 @@
 ## Challenge 07 :
 ###  Linked List  
 - `Linked_List` Class: Implements a singly linked list with methods to add, remove, print elements, and check for inclusion.
-[CC 07 whiteboard](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Data__Structures/LinkedList/LinkedList.jpg)
+[CC 07 whiteboard](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Data_Structures/LinkedList/LinkedList.jpg)
 
 
 

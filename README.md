@@ -55,5 +55,7 @@
 - `Linked_List` Class: Implements a singly linked list with methods to add, remove, print elements, and check for inclusion.
 [CC 07 whiteboard](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Data_Structures/LinkedList/LinkedList.jpg)
 
+- `RemoveDuplicate` Method: This method iterates through the linked list and removes any nodes that contain duplicate data values. It returns the count of the duplicate nodes that were removed.
+[CC 07 whiteboard & screenshot ](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Data_Structures/LinkedList/RemoveDuplicates/RemoveDuplicates.jpg)
 
 

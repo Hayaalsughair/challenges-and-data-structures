@@ -34,14 +34,14 @@ namespace c_basics.Data_Structures.LinkedList
         public void AddFirst(int value)
         {
             Node item = new Node(value);
-            if (Head == null) 
+            if (Head == null)
             {
                 Head = item;
                 Tail = item;
             }
             else
             {
-                item.Next = Head; 
+                item.Next = Head;
                 Head = item;
             }
 
@@ -97,7 +97,7 @@ namespace c_basics.Data_Structures.LinkedList
             if (Head.Data == value)
             {
                 Head = Head.Next;
-                if (Head == null) 
+                if (Head == null)
                 {
                     Tail = null;
                 }
@@ -129,6 +129,29 @@ namespace c_basics.Data_Structures.LinkedList
                 Console.WriteLine("Element Not Found");
             }
         }
-
+        public int RemoveDuplicate()
+        {
+            int duplicatesRemoved = 0;
+            Node current = Head;
+            while (current != null)
+            {
+                Node nextItem = current;
+                while (nextItem.Next != null)
+                {
+                    if (nextItem.Next.Data == current.Data)
+                    {
+                        nextItem.Next = nextItem.Next.Next;
+                        duplicatesRemoved++;
+                    }
+                    else
+                    {
+                        nextItem = nextItem.Next;
+                    }
+                }
+                current = current.Next;
+            }
+            return duplicatesRemoved;
+        }
     }
 }
+

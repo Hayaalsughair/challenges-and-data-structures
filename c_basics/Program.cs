@@ -1,6 +1,7 @@
 ﻿using c_basics.Challenges.Common_Elements;
 using c_basics.Data_Structures.LinkedList;
 using c_basics.Reverse_Words;
+using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Linq.Expressions;
 
@@ -65,25 +66,34 @@ namespace c_basics
             //string sol = ReverseWord.ReverseWords(statment1);
             //string sol2 = ReverseWord.ReverseWords(statment2);
             //string sol3 = ReverseWord.ReverseWords(statment3);
-
             //Console.WriteLine($"Input: {statment1}\tOutput: {sol}\nInput: {statment2}\tOutput: {sol2}\nInput: {statment3}\tOutput : {sol3}");
 
             //Linked List 
+            Console.WriteLine("-----------------------------------------");
             Linked_List myList = new Linked_List();
-            myList.AddEnd(10); 
+            myList.AddEnd(10);
             myList.AddFirst(5);
             myList.AddFirst(6);
             myList.AddEnd(7);
-            myList.Include(5);
-            Console.WriteLine("Print List Before Remove elemnt:");
+            myList.AddEnd(10);
+            myList.AddFirst(5);
+            myList.AddFirst(6);
+            myList.AddEnd(7);
+            //myList.Include(5);
+            //Console.WriteLine("Print List Before Remove elemnt:");
+            //myList.PrintList();
+            //myList.Remove(10);
+            //Console.WriteLine();
+            //Console.WriteLine("Print List After Remove elemnt: ");
+            //myList.PrintList();
+
+            //Linked - List - Remove - Duplicates
+            Console.WriteLine($"Print Array Before Remove Duplicates");
             myList.PrintList();
-            myList.Remove(10);
-            Console.WriteLine();
-            Console.WriteLine("Print List After Remove elemnt: ");
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("Array After Remove Duplicates ");
+            myList.RemoveDuplicate();
             myList.PrintList();
-
-
-
         }
 
         static int[] ReversArr(int[] arr0)

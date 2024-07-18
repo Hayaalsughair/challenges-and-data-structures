@@ -69,16 +69,15 @@ namespace c_basics
             //Console.WriteLine($"Input: {statment1}\tOutput: {sol}\nInput: {statment2}\tOutput: {sol2}\nInput: {statment3}\tOutput : {sol3}");
 
             //Linked List 
-            Console.WriteLine("-----------------------------------------");
             Linked_List myList = new Linked_List();
+            myList.AddEnd(1);
+            myList.AddEnd(2);
+            myList.AddEnd(5);
             myList.AddEnd(10);
-            myList.AddFirst(5);
-            myList.AddFirst(6);
-            myList.AddEnd(7);
-            myList.AddEnd(10);
-            myList.AddFirst(5);
-            myList.AddFirst(6);
-            myList.AddEnd(7);
+            Console.WriteLine("First LinkedList");
+            myList.PrintList();
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~"); 
+
             //myList.Include(5);
             //Console.WriteLine("Print List Before Remove elemnt:");
             //myList.PrintList();
@@ -88,12 +87,27 @@ namespace c_basics
             //myList.PrintList();
 
             //Linked - List - Remove - Duplicates
-            Console.WriteLine($"Print Array Before Remove Duplicates");
-            myList.PrintList();
-            Console.WriteLine("----------------------------------------");
-            Console.WriteLine("Array After Remove Duplicates ");
-            myList.RemoveDuplicate();
-            myList.PrintList();
+            //Console.WriteLine($"Print Array Before Remove Duplicates");
+            //myList.PrintList();
+            //Console.WriteLine("----------------------------------------");
+            //Console.WriteLine("Array After Remove Duplicates ");
+            //myList.RemoveDuplicate();
+            //myList.PrintList();
+
+           // Console.WriteLine("merge Sorted Linked List:");
+            Linked_List myList2 = new Linked_List();
+            myList2.AddEnd(3);
+            myList2.AddEnd(4);
+            myList2.AddEnd(12);
+            myList2.AddEnd(13);
+            myList2.AddEnd(14);
+            Console.WriteLine("Second LinkedList");
+            myList2 .PrintList();
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~");
+            // Merge Sorted Lists
+            Console.WriteLine("Merged Sorted Linked List:");
+            Linked_List mergedList = Linked_List.MergeSortedLists(myList, myList2);
+            mergedList.PrintList();
         }
 
         static int[] ReversArr(int[] arr0)

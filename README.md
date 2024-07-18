@@ -58,4 +58,6 @@
 - `RemoveDuplicate` Method: This method iterates through the linked list and removes any nodes that contain duplicate data values. It returns the count of the duplicate nodes that were removed.
 [CC 07 whiteboard & screenshot ](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Data_Structures/LinkedList/RemoveDuplicates/RemoveDuplicates.jpg)
 
+- `MergeSortedLists` Method : This method combines two sorted linked lists into a single sorted linked list.
+[CC 08 whiteboard & screenshot ](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Data_Structures/LinkedList/MergeSorted/mergeSortedList_cc08.jpg)
 

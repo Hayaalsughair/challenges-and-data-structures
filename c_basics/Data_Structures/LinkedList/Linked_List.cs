@@ -59,10 +59,11 @@ namespace c_basics.Data_Structures.LinkedList
                 int count = 0;
                 while (Start != null)
                 {
-                    Console.WriteLine(Start.Data);
+                    Console.Write(Start.Data + " ");
                     Start = Start.Next;
                     count++;
                 }
+                Console.WriteLine(" ");
                 return count;
             }
         }
@@ -152,6 +153,52 @@ namespace c_basics.Data_Structures.LinkedList
             }
             return duplicatesRemoved;
         }
+        public static Linked_List MergeSortedLists(Linked_List list1, Linked_List list2)
+        {
+            if (list1.Head == null && list2.Head == null)
+            {
+                Console.WriteLine("Both Linked Lists are empty");
+                return new Linked_List();
+
+            }
+            Linked_List mergeSortedList = new Linked_List();
+            Node current =  mergeSortedList.Head;
+
+            Node pointerA = list1.Head;
+            Node pointerB= list2.Head;
+
+            while (pointerA != null && pointerB != null)
+            {
+                if( pointerA.Data < pointerB.Data)
+                {
+                    //Use AddEnd Method  
+                    mergeSortedList.AddEnd(pointerA.Data);
+                    pointerA = pointerA.Next;
+                }
+                else
+                {
+                    mergeSortedList.AddEnd(pointerB.Data);
+                    pointerB = pointerB.Next;
+
+                }
+            }
+            //Add the remaining Nodes in Both LinkedList  
+            while (pointerA != null)
+            {
+                mergeSortedList.AddEnd(pointerA.Data);
+                pointerA = pointerA.Next;
+            }
+
+            while (pointerB != null)
+            {
+                mergeSortedList.AddEnd(pointerB.Data);
+                pointerB = pointerB.Next;
+            }
+
+            return mergeSortedList;
+        }
+
+
     }
 }
 

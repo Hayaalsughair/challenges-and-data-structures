@@ -1,6 +1,8 @@
 ﻿using c_basics.Challenges.Common_Elements;
 using c_basics.Data_Structures.LinkedList;
+using c_basics.Data_Structures.Stack_Queue;
 using c_basics.Reverse_Words;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Linq.Expressions;
@@ -69,14 +71,14 @@ namespace c_basics
             //Console.WriteLine($"Input: {statment1}\tOutput: {sol}\nInput: {statment2}\tOutput: {sol2}\nInput: {statment3}\tOutput : {sol3}");
 
             //Linked List 
-            Linked_List myList = new Linked_List();
-            myList.AddEnd(1);
-            myList.AddEnd(2);
-            myList.AddEnd(5);
-            myList.AddEnd(10);
-            Console.WriteLine("First LinkedList");
-            myList.PrintList();
-            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~"); 
+            //Linked_List myList = new Linked_List();
+            //myList.AddEnd(1);
+            //myList.AddEnd(2);
+            //myList.AddEnd(5);
+            //myList.AddEnd(10);
+            //Console.WriteLine("First LinkedList");
+            //myList.PrintList();
+            //Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~"); 
 
             //myList.Include(5);
             //Console.WriteLine("Print List Before Remove elemnt:");
@@ -94,20 +96,47 @@ namespace c_basics
             //myList.RemoveDuplicate();
             //myList.PrintList();
 
-           // Console.WriteLine("merge Sorted Linked List:");
-            Linked_List myList2 = new Linked_List();
-            myList2.AddEnd(3);
-            myList2.AddEnd(4);
-            myList2.AddEnd(12);
-            myList2.AddEnd(13);
-            myList2.AddEnd(14);
-            Console.WriteLine("Second LinkedList");
-            myList2 .PrintList();
-            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~");
-            // Merge Sorted Lists
-            Console.WriteLine("Merged Sorted Linked List:");
-            Linked_List mergedList = Linked_List.MergeSortedLists(myList, myList2);
-            mergedList.PrintList();
+            // Console.WriteLine("merge Sorted Linked List:");
+            //Linked_List myList2 = new Linked_List();
+            //myList2.AddEnd(3);
+            //myList2.AddEnd(4);
+            //myList2.AddEnd(12);
+            //myList2.AddEnd(13);
+            //myList2.AddEnd(14);
+            //Console.WriteLine("Second LinkedList");
+            //myList2 .PrintList();
+            //Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~");
+            //// Merge Sorted Lists
+            //Console.WriteLine("Merged Sorted Linked List:");
+            //Linked_List mergedList = Linked_List.MergeSortedLists(myList, myList2);
+            //mergedList.PrintList();
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~Queue~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+            Queue_structure myQueue = new Queue_structure();
+
+            myQueue.Enqueue(10);
+            myQueue.Enqueue(40);
+            myQueue.Enqueue(83);
+            myQueue.Enqueue(30);
+            
+
+            Console.WriteLine($"Peek\t\t\tresult: {myQueue.Peek()} expected:[10]");
+
+            myQueue.Dequeue();
+            Console.WriteLine($"Peek after Dequeue\tresult: {myQueue.Peek()} expected:[40]");
+            Console.WriteLine("\n~~~~~~~~~~~~~~~~~~~~~~Stack~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+            Stack_structure myStack = new Stack_structure();
+            myStack.Push(10);
+            myStack.Push(30);
+            myStack.Push(9);
+            myStack.Push(54);
+            Console.WriteLine($"Peek\t\t\tresult: {myStack.Peek()} expected:[54]");
+            myStack.Pop();
+            Console.WriteLine($"Peek after poped\tresult: {myStack.Peek()} expected:[9]");
+
+
+
         }
 
         static int[] ReversArr(int[] arr0)

@@ -61,3 +61,11 @@
 - `MergeSortedLists` Method : This method combines two sorted linked lists into a single sorted linked list.
 [CC 08 whiteboard & screenshot ](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Data_Structures/LinkedList/MergeSorted/mergeSortedList_cc08.jpg)
 
+## Challenge 09 :
+###  Queue and Stack  
+- `Queue_structure` Class: This class implements a queue demonstrates the Last In, First Out (LIFO) data structure .The Queue_structure class provides methods to manipulate and access queue elements efficiently.
+![CC 09 whiteboard](Data_Structures/Stack&Queue/Queue.jpg)
+
+- `Stack_structure` Class: This Class implements a stack demonstrating the Last In, First Out (LIFO) data structure . The Stack Structure class provides methods to manipulate and access stack elements effectively.
+![CC 09 whiteboard](Data_Structures/Stack&Queue/stack.jpg)
+![CC 09 screenshot](Data_Structures/Stack&Queue/ScreenshotQS.png)

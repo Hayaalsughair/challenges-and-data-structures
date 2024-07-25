@@ -64,8 +64,8 @@
 ## Challenge 09 :
 ###  Queue and Stack  
 - `Queue_structure` Class: This class implements a queue demonstrates the Last In, First Out (LIFO) data structure .The Queue_structure class provides methods to manipulate and access queue elements efficiently.
-![CC 09 whiteboard](Data_Structures/Stack&Queue/Queue.jpg)
+[CC 09 whiteboard](c_basics/Data_Structures/Stack&Queue/Queue.jpg)
 
 - `Stack_structure` Class: This Class implements a stack demonstrating the Last In, First Out (LIFO) data structure . The Stack Structure class provides methods to manipulate and access stack elements effectively.
-![CC 09 whiteboard](Data_Structures/Stack&Queue/stack.jpg)
-![CC 09 screenshot](Data_Structures/Stack&Queue/ScreenshotQS.png)
+[CC 09 whiteboard](c_basics/Data_Structures/Stack&Queue/stack.jpg)
+[CC 09 screenshot](c_basics/Data_Structures/Stack&Queue/ScreenshotQS.png)

@@ -69,3 +69,6 @@
 - `Stack_structure` Class: This Class implements a stack demonstrating the Last In, First Out (LIFO) data structure . The Stack Structure class provides methods to manipulate and access stack elements effectively.
 [CC 09 whiteboard](c_basics/Data_Structures/Stack&Queue/stack.jpg)
 [CC 09 screenshot](c_basics/Data_Structures/Stack&Queue/ScreenshotQS.png)
+
+- `Reverse a Stack using Queue` Class :This class contains the ReverseStack() method reversing the elements of a stack using a queue.
+[CC 09 whiteboard](c_basics/Data_Structures/Stack&Queue/ReverseStackUsingQueue/ReverseStack.jpg)

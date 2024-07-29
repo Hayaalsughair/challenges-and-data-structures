@@ -1,6 +1,7 @@
 ﻿using c_basics.Challenges.Common_Elements;
 using c_basics.Data_Structures.LinkedList;
 using c_basics.Data_Structures.Stack_Queue;
+using c_basics.Data_Structures.Stack_Queue.ReverseStackUsingQueue;
 using c_basics.Reverse_Words;
 using System.Collections;
 using System.Collections.Generic;
@@ -110,31 +111,47 @@ namespace c_basics
             //Console.WriteLine("Merged Sorted Linked List:");
             //Linked_List mergedList = Linked_List.MergeSortedLists(myList, myList2);
             //mergedList.PrintList();
-            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~Queue~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            //Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~Queue~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
-            Queue_structure myQueue = new Queue_structure();
+            //Queue_structure myQueue = new Queue_structure();
 
-            myQueue.Enqueue(10);
-            myQueue.Enqueue(40);
-            myQueue.Enqueue(83);
-            myQueue.Enqueue(30);
-            
+            //myQueue.Enqueue(10);
+            //myQueue.Enqueue(40);
+            //myQueue.Enqueue(83);
+            //myQueue.Enqueue(30);
 
-            Console.WriteLine($"Peek\t\t\tresult: {myQueue.Peek()} expected:[10]");
 
-            myQueue.Dequeue();
-            Console.WriteLine($"Peek after Dequeue\tresult: {myQueue.Peek()} expected:[40]");
-            Console.WriteLine("\n~~~~~~~~~~~~~~~~~~~~~~Stack~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            //Console.WriteLine($"Peek\t\t\tresult: {myQueue.Peek()} expected:[10]");
 
-            Stack_structure myStack = new Stack_structure();
-            myStack.Push(10);
-            myStack.Push(30);
-            myStack.Push(9);
-            myStack.Push(54);
-            Console.WriteLine($"Peek\t\t\tresult: {myStack.Peek()} expected:[54]");
-            myStack.Pop();
-            Console.WriteLine($"Peek after poped\tresult: {myStack.Peek()} expected:[9]");
+            //myQueue.Dequeue();
+            //Console.WriteLine($"Peek after Dequeue\tresult: {myQueue.Peek()} expected:[40]");
+            //Console.WriteLine("\n~~~~~~~~~~~~~~~~~~~~~~Stack~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
+            //Stack_structure myStack = new Stack_structure();
+            //myStack.Push(10);
+            //myStack.Push(30);
+            //myStack.Push(9);
+            //myStack.Push(54);
+            //Console.WriteLine($"Peek\t\t\tresult: {myStack.Peek()} expected:[54]");
+            //myStack.Pop();
+            //Console.WriteLine($"Peek after poped\tresult: {myStack.Peek()} expected:[9]");
+            StackWithReverse stack = new StackWithReverse();
+            stack.Push(1);
+            stack.Push(2);
+            stack.Push(3);
+            stack.Push(4);
+            stack.Push(5);
+
+            Console.WriteLine($"Satck Before Reverse, Top:{stack.Peek()}");
+            stack.ReverseStack();
+            Console.WriteLine($"Satck After Reverse, Top:{stack.Peek()}");
+            Console.WriteLine("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+            Console.WriteLine("We push [6] and [7]");
+            stack.Push(6);
+            stack.Push(7);
+            Console.WriteLine($"Satck Before Reverse, Top:{stack.Peek()}"); 
+            stack.ReverseStack();
+            Console.WriteLine($"Satck After Reverse, Top:{stack.Peek()}");
 
 
         }

@@ -8,7 +8,7 @@ namespace c_basics.Data_Structures.Stack_Queue
 {
     public class Stack_structure
     {
-        private Node top;
+        public Node top;
 
         public Stack_structure()
         {

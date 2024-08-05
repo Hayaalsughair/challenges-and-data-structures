@@ -1,6 +1,7 @@
 ﻿using c_basics.Challenges.Common_Elements;
 using c_basics.Data_Structures.LinkedList;
 using c_basics.Data_Structures.Stack_Queue;
+using c_basics.Data_Structures.Stack_Queue.DeleteMiddleElement;
 using c_basics.Data_Structures.Stack_Queue.ReverseStackUsingQueue;
 using c_basics.Reverse_Words;
 using System.Collections;
@@ -135,25 +136,34 @@ namespace c_basics
             //Console.WriteLine($"Peek\t\t\tresult: {myStack.Peek()} expected:[54]");
             //myStack.Pop();
             //Console.WriteLine($"Peek after poped\tresult: {myStack.Peek()} expected:[9]");
-            StackWithReverse stack = new StackWithReverse();
-            stack.Push(1);
-            stack.Push(2);
-            stack.Push(3);
-            stack.Push(4);
-            stack.Push(5);
+           // StackWithReverse stack = new StackWithReverse();
+            //stack.Push(1);
+            //stack.Push(2);
+            //stack.Push(3);
+            //stack.Push(4);
+            //stack.Push(5);
 
-            Console.WriteLine($"Satck Before Reverse, Top:{stack.Peek()}");
-            stack.ReverseStack();
-            Console.WriteLine($"Satck After Reverse, Top:{stack.Peek()}");
-            Console.WriteLine("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-            Console.WriteLine("We push [6] and [7]");
-            stack.Push(6);
-            stack.Push(7);
-            Console.WriteLine($"Satck Before Reverse, Top:{stack.Peek()}"); 
-            stack.ReverseStack();
-            Console.WriteLine($"Satck After Reverse, Top:{stack.Peek()}");
-
-
+            //Console.WriteLine($"Satck Before Reverse, Top:{stack.Peek()}");
+            //stack.ReverseStack();
+            //Console.WriteLine($"Satck After Reverse, Top:{stack.Peek()}");
+            //Console.WriteLine("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+            //Console.WriteLine("We push [6] and [7]");
+            //stack.Push(6);
+            //stack.Push(7);
+            //Console.WriteLine($"Satck Before Reverse, Top:{stack.Peek()}"); 
+            //stack.ReverseStack();
+            //Console.WriteLine($"Satck After Reverse, Top:{stack.Peek()}");
+            StackWithDeleteMiddle stack = new StackWithDeleteMiddle();
+            stack.Push(10);
+            stack.Push(20);
+            stack.Push(30);
+            stack.Push(40);
+            //stack.Push(50);
+            Console.WriteLine("Satck before delete middle value ");
+            stack.PrintStack();
+            stack.DeleteMiddle();
+            Console.WriteLine("\nSatck after delete middle value ");
+            stack.PrintStack();
         }
 
         static int[] ReversArr(int[] arr0)

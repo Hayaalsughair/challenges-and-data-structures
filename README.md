@@ -72,3 +72,6 @@
 
 - `Reverse a Stack using Queue` Class :This class contains the ReverseStack() method reversing the elements of a stack using a queue.
 [CC 09 whiteboard](c_basics/Data_Structures/Stack&Queue/ReverseStackUsingQueue/ReverseStack.jpg)
+
+- - `StackWithDeleteMiddle` Class :This class contains the DeleteMiddle() method for removing the middle element from the stack.
+[CC 09 whiteboard](c_basics/Data_Structures/Stack&Queue/DeleteMiddleElement/removeMiddleElement.jpg)

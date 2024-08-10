@@ -2,6 +2,7 @@
 using c_basics.Data_Structures.LinkedList;
 using c_basics.Data_Structures.Stack_Queue;
 using c_basics.Data_Structures.Stack_Queue.DeleteMiddleElement;
+using c_basics.Data_Structures.Stack_Queue.MinStack;
 using c_basics.Data_Structures.Stack_Queue.ReverseStackUsingQueue;
 using c_basics.Reverse_Words;
 using System.Collections;
@@ -136,7 +137,7 @@ namespace c_basics
             //Console.WriteLine($"Peek\t\t\tresult: {myStack.Peek()} expected:[54]");
             //myStack.Pop();
             //Console.WriteLine($"Peek after poped\tresult: {myStack.Peek()} expected:[9]");
-           // StackWithReverse stack = new StackWithReverse();
+            // StackWithReverse stack = new StackWithReverse();
             //stack.Push(1);
             //stack.Push(2);
             //stack.Push(3);
@@ -153,17 +154,39 @@ namespace c_basics
             //Console.WriteLine($"Satck Before Reverse, Top:{stack.Peek()}"); 
             //stack.ReverseStack();
             //Console.WriteLine($"Satck After Reverse, Top:{stack.Peek()}");
-            StackWithDeleteMiddle stack = new StackWithDeleteMiddle();
-            stack.Push(10);
-            stack.Push(20);
-            stack.Push(30);
-            stack.Push(40);
-            //stack.Push(50);
-            Console.WriteLine("Satck before delete middle value ");
-            stack.PrintStack();
-            stack.DeleteMiddle();
-            Console.WriteLine("\nSatck after delete middle value ");
-            stack.PrintStack();
+            //StackWithDeleteMiddle stack = new StackWithDeleteMiddle();
+            //stack.Push(10);
+            //stack.Push(20);
+            //stack.Push(30);
+            //stack.Push(40);
+            ////stack.Push(50);
+            //Console.WriteLine("Satck before delete middle value ");
+            //stack.PrintStack();
+            //stack.DeleteMiddle();
+            //Console.WriteLine("\nSatck after delete middle value ");
+            //stack.PrintStack();
+            MinStack minStack = new MinStack();
+
+            minStack.Push(15);
+            minStack.Push(7);
+            minStack.Push(12);
+            minStack.Push(3);
+
+            minStack.PrintStack(); 
+
+            Console.WriteLine($"MinVaule:{minStack.GetMin()}");
+
+            minStack.Pop();
+            minStack.PrintStack(); 
+
+            Console.WriteLine($"MinValue After Pooped: {minStack.GetMin()}");
+            Console.WriteLine($"Top value: {minStack.Top()}");
+
+            minStack.Push(2);
+            Console.WriteLine($"MinStack After Push [2]:");
+            minStack.PrintStack();
+
+            Console.WriteLine($"MinValue After Push [2] :{minStack.GetMin()}");
         }
 
         static int[] ReversArr(int[] arr0)

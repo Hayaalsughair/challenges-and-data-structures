@@ -75,3 +75,7 @@
 
 - `StackWithDeleteMiddle` Class :This class contains the DeleteMiddle() method for removing the middle element from the stack.
 [CC 09 whiteboard](c_basics/Data_Structures/Stack&Queue/DeleteMiddleElement/removeMiddleElement.jpg)
+
+- `MinStack` Class :This class provides stack operations with the additional ability to retrieve the minimum element in constant time.
+[CC 09 whiteboard](c_basics/Data_Structures/Stack&Queue/MinStack/minStack.jpg),   
+	[CC 09 Output](c_basics/Data_Structures/Stack&Queue/MinStack/minStackOutput.png)

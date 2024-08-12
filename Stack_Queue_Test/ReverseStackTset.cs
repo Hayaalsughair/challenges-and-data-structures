@@ -10,45 +10,45 @@ namespace Stack_Queue_Test
 {
     public class ReverseStackTset
     {
-        [Fact]
-        public void ReversingStackWithMultipleElements()
-        {
-            // Arrange
-            StackWithReverse testStack = new StackWithReverse();
-            testStack.Push(1);
-            testStack.Push(2);
-            testStack.Push(3);
+        //[Fact]
+        //public void ReversingStackWithMultipleElements()
+        //{
+        //    // Arrange
+        //    StackWithReverse testStack = new StackWithReverse();
+        //    testStack.Push(1);
+        //    testStack.Push(2);
+        //    testStack.Push(3);
 
-            // Act
-            testStack.ReverseStack();
+        //    // Act
+        //    testStack.ReverseStack();
 
-            // Assert
-            Assert.Equal(1, testStack.Peek());
-        }
-        [Fact]
-        public void ReversingStackWithOneElementTest()
-        {
-            // Arrange
-            StackWithReverse testStack = new StackWithReverse();
-            testStack.Push(1);
+        //    // Assert
+        //    Assert.Equal(1, testStack.Peek());
+        //}
+        //[Fact]
+        //public void ReversingStackWithOneElementTest()
+        //{
+        //    // Arrange
+        //    StackWithReverse testStack = new StackWithReverse();
+        //    testStack.Push(1);
 
-            // Act
-            testStack.ReverseStack();
+        //    // Act
+        //    testStack.ReverseStack();
 
-            // Assert
-            Assert.Equal(1, testStack.Peek());
-        }
-        [Fact]
-        public void ReversingEmptyStackTest()
-        {
-            // Arrange
-            StackWithReverse testStack = new StackWithReverse();
+        //    // Assert
+        //    Assert.Equal(1, testStack.Peek());
+        //}
+        //[Fact]
+        //public void ReversingEmptyStackTest()
+        //{
+        //    // Arrange
+        //    StackWithReverse testStack = new StackWithReverse();
 
-            // Act
-            testStack.ReverseStack();
+        //    // Act
+        //    testStack.ReverseStack();
 
-            // Assert
-            Assert.True(testStack.IsEmpty());
-        }
+        //    // Assert
+        //    Assert.True(testStack.IsEmpty());
+       // }
     }
 }

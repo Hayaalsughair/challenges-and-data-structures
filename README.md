@@ -79,3 +79,10 @@
 - `MinStack` Class :This class provides stack operations with the additional ability to retrieve the minimum element in constant time.
 [CC 09 whiteboard](c_basics/Data_Structures/Stack&Queue/MinStack/minStack.jpg),   
 	[CC 09 Output](c_basics/Data_Structures/Stack&Queue/MinStack/minStackOutput.png)
+
+## Challenge 10 :
+###  Trees 
+- `BinaryTree` Class :This class represents a basic binary tree structure where each node can have up to two children: a left child and a right child. This class provides foundational tree operations that are common to all types of binary trees.
+- `BinarySearchTree` Class :This class extends the BinaryTree class to implement a binary search tree (BST). A BST is a specialized binary tree where each node's left subtree contains values less than the node's value, and the right subtree contains values greater than the node's value. This property enables efficient search, insertion, and deletion operations.
+[CC 10 whiteboard](c_basics/Data_Structures/Trees/BST.jpg),   
+	[CC 09 Output](c_basics/Data_Structures/Trees/outputTree.png)

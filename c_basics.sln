@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedListTest", "LinkedLis
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemoveDuplicatesTests", "RemoveDuplicatesTests\RemoveDuplicatesTests.csproj", "{4437DA64-3D1D-407E-A504-5B1239AEB3BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack_Queue_Test", "Stack_Queue_Test\Stack_Queue_Test.csproj", "{1B7293EF-433B-4C51-83A6-0161273623F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stack_Queue_Test", "Stack_Queue_Test\Stack_Queue_Test.csproj", "{1B7293EF-433B-4C51-83A6-0161273623F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreesTest", "TreesTest\TreesTest.csproj", "{73CB1C6E-0384-491D-925E-3DBEA86CCFB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{1B7293EF-433B-4C51-83A6-0161273623F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B7293EF-433B-4C51-83A6-0161273623F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B7293EF-433B-4C51-83A6-0161273623F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73CB1C6E-0384-491D-925E-3DBEA86CCFB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73CB1C6E-0384-491D-925E-3DBEA86CCFB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73CB1C6E-0384-491D-925E-3DBEA86CCFB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73CB1C6E-0384-491D-925E-3DBEA86CCFB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

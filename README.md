@@ -90,3 +90,7 @@
 - `MirrorTree` Class :Is a specialized class that inherits from `BinarySearchTree` class. It provides functionality to transform a binary search tree into its mirror image. The class includes a `MirrorTree()` method, which recursively swaps the left and right children of each node in the tree, effectively mirroring the entire structure.
 [CC 11 whiteboard](c_basics/Data_Structures/Trees/TreeImplementation/MirrorBorad.jpg)  
 	[CC 11 Output](c_basics/Data_Structures/Trees/TreeImplementation/mirrorOutPut.png)
+
+- `SecondMaxValue` Class: This class inherits from the `BinaryTree` class and includes a method to determine the second highest value within the binary tree.
+[CC 12 whiteboard](c_basics/Data_Structures/Trees/TreeImplementation/SecondMaxValue.jpg)  
+	[CC 12 Output](c_basics/Data_Structures/Trees/TreeImplementation/SecondMaxValueOutput.png)

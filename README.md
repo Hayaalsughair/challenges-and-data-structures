@@ -86,3 +86,7 @@
 - `BinarySearchTree` Class :This class extends the BinaryTree class to implement a binary search tree (BST). A BST is a specialized binary tree where each node's left subtree contains values less than the node's value, and the right subtree contains values greater than the node's value. This property enables efficient search, insertion, and deletion operations.
 [CC 10 whiteboard](c_basics/Data_Structures/Trees/BST.jpg),   
 	[CC 09 Output](c_basics/Data_Structures/Trees/outputTree.png)
+ 
+- `MirrorTree` Class :Is a specialized class that inherits from `BinarySearchTree` class. It provides functionality to transform a binary search tree into its mirror image. The class includes a `MirrorTree()` method, which recursively swaps the left and right children of each node in the tree, effectively mirroring the entire structure.
+[CC 11 whiteboard](c_basics/Data_Structures/Trees/TreeImplementation/MirrorBorad.jpg)  
+	[CC 11 Output](c_basics/Data_Structures/Trees/TreeImplementation/mirrorOutPut.png)

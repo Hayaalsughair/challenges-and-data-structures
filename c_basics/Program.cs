@@ -5,6 +5,7 @@ using c_basics.Data_Structures.Stack_Queue.DeleteMiddleElement;
 using c_basics.Data_Structures.Stack_Queue.MinStack;
 using c_basics.Data_Structures.Stack_Queue.ReverseStackUsingQueue;
 using c_basics.Data_Structures.Trees;
+using c_basics.Data_Structures.Trees.TreeImplementation;
 using c_basics.Reverse_Words;
 using System.Collections;
 using System.Collections.Generic;
@@ -189,28 +190,40 @@ namespace c_basics
 
             //Console.WriteLine($"MinValue After Push [2] :{minStack.GetMin()}");
 
-            BinarySearchTree bst = new BinarySearchTree();
-            bst.Add(5);
-            bst.Add(3);
-            bst.Add(10);
-            bst.Add(1);
-            bst.Add(9);
-            bst.Add(16);
-            bst.Add(15);
+            //BinarySearchTree bst = new BinarySearchTree();
+            //bst.Add(5);
+            //bst.Add(3);
+            //bst.Add(10);
+            //bst.Add(1);
+            //bst.Add(9);
+            //bst.Add(16);
+            //bst.Add(15);
 
-            Console.WriteLine("PostOrder Traversal:");
-            bst.PostOrder(bst.Root);
-            Console.WriteLine("\nInOrder Traversal:");
-            bst.InOrder(bst.Root);
-            Console.WriteLine("\nPreOrder Traversal:");
-            bst.PreOrder(bst.Root);
-            Console.WriteLine($"\nTree contains [15]: {bst.Contains(15)}"); 
-            Console.WriteLine($"Tree contains [90]: {bst.Contains(90)}"); 
+            //Console.WriteLine("PostOrder Traversal:");
+            //bst.PostOrder(bst.Root);
+            //Console.WriteLine("\nInOrder Traversal:");
+            //bst.InOrder(bst.Root);
+            //Console.WriteLine("\nPreOrder Traversal:");
+            //bst.PreOrder(bst.Root);
+            //Console.WriteLine($"\nTree contains [15]: {bst.Contains(15)}"); 
+            //Console.WriteLine($"Tree contains [90]: {bst.Contains(90)}"); 
 
-            bst.Remove(3);
-            Console.WriteLine("Element [3] removed from the Binary Search Tree.");
+            //bst.Remove(3);
+            //Console.WriteLine("Element [3] removed from the Binary Search Tree.");
 
-            Console.WriteLine($"Tree contains 30 after removal: {bst.Contains(3)}"); 
+            //Console.WriteLine($"Tree contains 30 after removal: {bst.Contains(3)}"); 
+
+            MiroorTree miroor = new MiroorTree();
+            miroor.Add(5);
+            miroor.Add(3);
+            miroor.Add(10);
+            miroor.Add(1);
+            Console.WriteLine("Before Mirror:");
+            miroor.InOrder(miroor.Root);
+
+            Console.WriteLine("\nAfter Mirror:");
+            miroor.MirrorTree();
+            miroor.InOrder(miroor.Root);
         }
 
         static int[] ReversArr(int[] arr0)

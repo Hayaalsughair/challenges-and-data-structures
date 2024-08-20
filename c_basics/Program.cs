@@ -213,17 +213,28 @@ namespace c_basics
 
             //Console.WriteLine($"Tree contains 30 after removal: {bst.Contains(3)}"); 
 
-            MiroorTree miroor = new MiroorTree();
-            miroor.Add(5);
-            miroor.Add(3);
-            miroor.Add(10);
-            miroor.Add(1);
-            Console.WriteLine("Before Mirror:");
-            miroor.InOrder(miroor.Root);
+            //MiroorTree miroor = new MiroorTree();
+            //miroor.Add(5);
+            //miroor.Add(3);
+            //miroor.Add(10);
+            //miroor.Add(1);
+            //Console.WriteLine("Before Mirror:");
+            //miroor.InOrder(miroor.Root);
 
-            Console.WriteLine("\nAfter Mirror:");
-            miroor.MirrorTree();
-            miroor.InOrder(miroor.Root);
+            //Console.WriteLine("\nAfter Mirror:");
+            //miroor.MirrorTree();
+            //miroor.InOrder(miroor.Root);
+            SecondMaxValue Btree = new SecondMaxValue();
+            Btree.Root = new TNode(10);
+            Btree.Root.Left = new TNode(5);
+            Btree.Root.Right = new TNode(20);
+            Btree.Root.Left.Left = new TNode(3);
+            Btree.Root.Left.Right = new TNode(7);
+            Btree.Root.Right.Left = new TNode(15);
+            Btree.Root.Right.Right = new TNode(25);
+
+            int secondMax = Btree.FindSecondMax();
+            Console.WriteLine($"second value = {secondMax}");
         }
 
         static int[] ReversArr(int[] arr0)

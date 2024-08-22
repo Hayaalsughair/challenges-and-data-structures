@@ -224,17 +224,28 @@ namespace c_basics
             //Console.WriteLine("\nAfter Mirror:");
             //miroor.MirrorTree();
             //miroor.InOrder(miroor.Root);
-            SecondMaxValue Btree = new SecondMaxValue();
-            Btree.Root = new TNode(10);
-            Btree.Root.Left = new TNode(5);
-            Btree.Root.Right = new TNode(20);
-            Btree.Root.Left.Left = new TNode(3);
-            Btree.Root.Left.Right = new TNode(7);
-            Btree.Root.Right.Left = new TNode(15);
-            Btree.Root.Right.Right = new TNode(25);
+            //SecondMaxValue Btree = new SecondMaxValue();
+            //Btree.Root = new TNode(10);
+            //Btree.Root.Left = new TNode(5);
+            //Btree.Root.Right = new TNode(20);
+            //Btree.Root.Left.Left = new TNode(3);
+            //Btree.Root.Left.Right = new TNode(7);
+            //Btree.Root.Right.Left = new TNode(15);
+            //Btree.Root.Right.Right = new TNode(25);
 
-            int secondMax = Btree.FindSecondMax();
-            Console.WriteLine($"second value = {secondMax}");
+            //int secondMax = Btree.FindSecondMax();
+            //Console.WriteLine($"second value = {secondMax}");
+
+            LeafSum sumNodes = new LeafSum();
+            sumNodes.Root = new TNode(10);
+            sumNodes.Root.Left = new TNode(5);
+            sumNodes.Root.Right = new TNode(20);
+            sumNodes.Root.Left.Left = new TNode(3);
+            sumNodes.Root.Left.Right = new TNode(7);
+
+            int sumValue = sumNodes.SumOfLeafNodes();
+            Console.WriteLine($"The leaf nodes are 3, 7, and 20.\nSum Of Dead Node = {sumValue}");
+
         }
 
         static int[] ReversArr(int[] arr0)

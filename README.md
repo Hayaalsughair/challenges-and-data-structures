@@ -94,3 +94,6 @@
 - `SecondMaxValue` Class: This class inherits from the `BinaryTree` class and includes a method to determine the second highest value within the binary tree.
 [CC 12 whiteboard](c_basics/Data_Structures/Trees/TreeImplementation/SecondMaxValue.jpg)  
 	[CC 12 Output](c_basics/Data_Structures/Trees/TreeImplementation/SecondMaxValueOutput.png)
+
+- `LeafSum` Class: . This class extends from a base class BinaryTree and provides a method to compute this sum.
+[CC 13 whiteboard and Output](c_basics/Data_Structures/Trees/TreeImplementation/leafSumNodes.jpg)  

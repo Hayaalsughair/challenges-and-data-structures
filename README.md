@@ -97,3 +97,6 @@
 
 - `LeafSum` Class: . This class extends from a base class BinaryTree and provides a method to compute this sum.
 [CC 13 whiteboard and Output](c_basics/Data_Structures/Trees/TreeImplementation/leafSumNodes.jpg)  
+
+- `LargestLevelValue` Class: A specialized class that inherits from `BinaryTree`. It provides functionality to find the largest value at each level of a binary tree. The class includes the `LargestValueEachLevel()` method, which uses a helper function to traverse the tree level by level, keeping track of and returning the largest values at each level.
+[CC 14 whiteboard and Output](c_basics/Data_Structures/Trees/TreeImplementation/LargestValueLevels.jpg)  

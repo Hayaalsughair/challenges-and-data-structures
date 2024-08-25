@@ -236,15 +236,28 @@ namespace c_basics
             //int secondMax = Btree.FindSecondMax();
             //Console.WriteLine($"second value = {secondMax}");
 
-            LeafSum sumNodes = new LeafSum();
-            sumNodes.Root = new TNode(10);
-            sumNodes.Root.Left = new TNode(5);
-            sumNodes.Root.Right = new TNode(20);
-            sumNodes.Root.Left.Left = new TNode(3);
-            sumNodes.Root.Left.Right = new TNode(7);
+            //LeafSum sumNodes = new LeafSum();
+            //sumNodes.Root = new TNode(10);
+            //sumNodes.Root.Left = new TNode(5);
+            //sumNodes.Root.Right = new TNode(20);
+            //sumNodes.Root.Left.Left = new TNode(3);
+            //sumNodes.Root.Left.Right = new TNode(7);
 
-            int sumValue = sumNodes.SumOfLeafNodes();
-            Console.WriteLine($"The leaf nodes are 3, 7, and 20.\nSum Of Dead Node = {sumValue}");
+            //int sumValue = sumNodes.SumOfLeafNodes();
+            //Console.WriteLine($"The leaf nodes are 3, 7, and 20.\nSum Of Dead Node = {sumValue}");
+
+            LargestLevelValue Btree = new LargestLevelValue();
+            Btree.Root = new TNode(4);
+            Btree.Root.Left = new TNode(9);
+            Btree.Root.Right = new TNode(2);
+            Btree.Root.Right.Right = new TNode(7);
+            Btree.Root.Left.Left = new TNode(3);
+            Btree.Root.Left.Right = new TNode(5);
+
+            List<int> largestValues = Btree.LargestValueEachLevel(Btree.Root);
+
+            Console.WriteLine("Largest values at each level:");
+            Console.WriteLine(string.Join(", ", largestValues));
 
         }
 

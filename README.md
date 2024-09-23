@@ -61,6 +61,9 @@
 - `MergeSortedLists` Method : This method combines two sorted linked lists into a single sorted linked list.
 [CC 08 whiteboard & screenshot ](https://github.com/Hayaalsughair/challenges-and-data-structures/blob/master/c_basics/Data_Structures/LinkedList/MergeSorted/mergeSortedList_cc08.jpg)
 
+- `RotateLeft` Method: This method shifts the first k nodes of a singly linked list to the end, updating the head and tail pointers.
+[CC 15 whiteboard & screenshot ](c_basics/Data_Structures/LinkedList/RotateLinkedList/rotate-k.jpg)
+
 ## Challenge 09 :
 ###  Queue and Stack  
 - `Queue_structure` Class: This class implements a queue demonstrates the First In, First Out (FIFO) data structure .The Queue_structure class provides methods to manipulate and access queue elements efficiently.

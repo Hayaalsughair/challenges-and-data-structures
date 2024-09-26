@@ -103,3 +103,6 @@
 
 - `LargestLevelValue` Class: A specialized class that inherits from `BinaryTree`. It provides functionality to find the largest value at each level of a binary tree. The class includes the `LargestValueEachLevel()` method, which uses a helper function to traverse the tree level by level, keeping track of and returning the largest values at each level.
 [CC 14 whiteboard and Output](c_basics/Data_Structures/Trees/TreeImplementation/LargestValueLevels.jpg)  
+
+- `RightViewPrint` Class: A specialized class that inherits from `BinaryTree`, providing functionality to print the right view of the tree by traversing nodes level by level, prioritizing the rightmost node at each level.
+[CC 14 whiteboard and Output](c_basics/Data_Structures/Trees/TreeImplementation/RightView.jpg)  

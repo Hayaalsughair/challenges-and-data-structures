@@ -259,22 +259,40 @@ namespace c_basics
             //Console.WriteLine("Largest values at each level:");
             //Console.WriteLine(string.Join(", ", largestValues));
 
-            Linked_List rotatList = new Linked_List();
+            //Linked_List rotatList = new Linked_List();
 
-            // Add nodes to the list
-            rotatList.AddFirst(6);
-            rotatList.AddFirst(5);
-            rotatList.AddFirst(4);
-            rotatList.AddFirst(3);
-            rotatList.AddFirst(2);
-            rotatList.AddFirst(1);
+            //// Add nodes to the list
+            //rotatList.AddFirst(6);
+            //rotatList.AddFirst(5);
+            //rotatList.AddFirst(4);
+            //rotatList.AddFirst(3);
+            //rotatList.AddFirst(2);
+            //rotatList.AddFirst(1);
 
-            Console.WriteLine("Original List:");
-            rotatList.PrintList();
-            Console.WriteLine("List After Rotat:\nK=3");
-            int k = 3;
-            rotatList.RotateLeft(k);
-            rotatList.PrintList();
+            //Console.WriteLine("Original List:");
+            //rotatList.PrintList();
+            //Console.WriteLine("List After Rotat:\nK=3");
+            //int k = 3;
+            //rotatList.RotateLeft(k);
+            //rotatList.PrintList();
+
+
+
+            RightViewPrint Rtree = new RightViewPrint();
+            //Rtree.Root = new TNode(4);
+            //Rtree.Root.Left = new TNode(9);
+            //Rtree.Root.Right = new TNode(2);
+            //Rtree.Root.Right.Right = new TNode(7);
+            //Rtree.Root.Right.Right.Right = new TNode(8);
+
+            Rtree.Root = new TNode(2);
+            Rtree.Root.Left = new TNode(3);
+            Rtree.Root.Right = new TNode(5);
+            Rtree.Root.Left.Left = new TNode(4);
+            Rtree.Root.Right.Right = new TNode(6);
+            Rtree.Root.Left.Left.Right = new TNode(7);
+            Console.WriteLine("Right values =");
+            Rtree.PrintRightView();
         }
 
         static int[] ReversArr(int[] arr0)

@@ -109,3 +109,6 @@
 
 - `MaxLevelNodes` Class: This class inherits from `BinaryTree` and contains the `FindMaxLevelNodes` method. It is designed to find and return the level in a binary tree that has the maximum number of nodes.
 [CC 15 whiteboard and Output](c_basics/Data_Structures/Trees/TreeImplementation/FindMaxLevelNodes.jpg)  
+
+- `MinimumDepth` Class: This class inherits from `BinaryTree` and contains the `FindMinimumDepth` method. This design encapsulates the functionality for calculating the minimum depth within a specialized class, allowing for better organization and potential future expansions.
+[CC 16 whiteboard and Output](c_basics/Data_Structures/Trees/TreeImplementation/MinimumDepth.jpg)  

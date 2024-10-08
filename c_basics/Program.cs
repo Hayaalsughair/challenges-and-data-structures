@@ -294,17 +294,15 @@ namespace c_basics
             //Console.WriteLine("Right values =");
             //Rtree.PrintRightView();
 
-            MaxLevelNodes Btree1 = new MaxLevelNodes();
+            MinimumDepth Btree1 = new MinimumDepth();
             Btree1.Root = new TNode(1);
             Btree1.Root.Left = new TNode(2);
             Btree1.Root.Right = new TNode(3);
             Btree1.Root.Left.Left = new TNode(4);
             Btree1.Root.Left.Right = new TNode(5);
-            Btree1.Root.Right.Right = new TNode(6);
-            Btree1.Root.Left.Left.Left = new TNode(7);
 
-            int maxLevel1 = Btree1.FindMaxLevelNodes();
-            Console.WriteLine("Max Level in " + maxLevel1);
+            int maxLevel1 = Btree1.FindMinimumDepth();
+            Console.WriteLine("Minimum Depth " + maxLevel1);
 
         }
 

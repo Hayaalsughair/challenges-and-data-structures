@@ -278,21 +278,34 @@ namespace c_basics
 
 
 
-            RightViewPrint Rtree = new RightViewPrint();
+            //RightViewPrint Rtree = new RightViewPrint();
             //Rtree.Root = new TNode(4);
             //Rtree.Root.Left = new TNode(9);
             //Rtree.Root.Right = new TNode(2);
             //Rtree.Root.Right.Right = new TNode(7);
             //Rtree.Root.Right.Right.Right = new TNode(8);
 
-            Rtree.Root = new TNode(2);
-            Rtree.Root.Left = new TNode(3);
-            Rtree.Root.Right = new TNode(5);
-            Rtree.Root.Left.Left = new TNode(4);
-            Rtree.Root.Right.Right = new TNode(6);
-            Rtree.Root.Left.Left.Right = new TNode(7);
-            Console.WriteLine("Right values =");
-            Rtree.PrintRightView();
+            //Rtree.Root = new TNode(2);
+            //Rtree.Root.Left = new TNode(3);
+            //Rtree.Root.Right = new TNode(5);
+            //Rtree.Root.Left.Left = new TNode(4);
+            //Rtree.Root.Right.Right = new TNode(6);
+            //Rtree.Root.Left.Left.Right = new TNode(7);
+            //Console.WriteLine("Right values =");
+            //Rtree.PrintRightView();
+
+            MaxLevelNodes Btree1 = new MaxLevelNodes();
+            Btree1.Root = new TNode(1);
+            Btree1.Root.Left = new TNode(2);
+            Btree1.Root.Right = new TNode(3);
+            Btree1.Root.Left.Left = new TNode(4);
+            Btree1.Root.Left.Right = new TNode(5);
+            Btree1.Root.Right.Right = new TNode(6);
+            Btree1.Root.Left.Left.Left = new TNode(7);
+
+            int maxLevel1 = Btree1.FindMaxLevelNodes();
+            Console.WriteLine("Max Level in " + maxLevel1);
+
         }
 
         static int[] ReversArr(int[] arr0)

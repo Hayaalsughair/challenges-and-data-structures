@@ -98,7 +98,7 @@
 [CC 12 whiteboard](c_basics/Data_Structures/Trees/TreeImplementation/SecondMaxValue.jpg)  
 	[CC 12 Output](c_basics/Data_Structures/Trees/TreeImplementation/SecondMaxValueOutput.png)
 
-- `LeafSum` Class: . This class extends from a base class BinaryTree and provides a method to compute this sum.
+- `LeafSum` Class: This class extends from a base class BinaryTree and provides a method to compute this sum.
 [CC 13 whiteboard and Output](c_basics/Data_Structures/Trees/TreeImplementation/leafSumNodes.jpg)  
 
 - `LargestLevelValue` Class: A specialized class that inherits from `BinaryTree`. It provides functionality to find the largest value at each level of a binary tree. The class includes the `LargestValueEachLevel()` method, which uses a helper function to traverse the tree level by level, keeping track of and returning the largest values at each level.
@@ -106,3 +106,6 @@
 
 - `RightViewPrint` Class: A specialized class that inherits from `BinaryTree`, providing functionality to print the right view of the tree by traversing nodes level by level, prioritizing the rightmost node at each level.
 [CC 14 whiteboard and Output](c_basics/Data_Structures/Trees/TreeImplementation/RightView.jpg)  
+
+- `MaxLevelNodes` Class: This class inherits from `BinaryTree` and contains the `FindMaxLevelNodes` method. It is designed to find and return the level in a binary tree that has the maximum number of nodes.
+[CC 15 whiteboard and Output](c_basics/Data_Structures/Trees/TreeImplementation/FindMaxLevelNodes.jpg)  
